@@ -11,7 +11,7 @@
 
 // What part do you want to view?
 
-preview_part = 7; // [1:Extruder,2:Idler,3:Idler with brim,4:Strut,5:Axle,6:Tube Bracket,7:All Parts]
+preview_part = 1; // [1:Extruder,2:Idler,3:Idler with brim,4:Strut,5:Axle,6:Tube Bracket,7:All Parts]
 
 
 // *****************************************************
@@ -375,9 +375,9 @@ module infeed_block() {
 				translate([-2,4,12]) rotate([0,-90,0]) cylinder(10, r=5.9, $fn=100);
 				translate([1,4,12]) rotate([0,-90,0]) cylinder(3, r1=4, r2=5.9, $fn=100);
 			}
-			translate([8,4,12]) rotate([0,-90,0]) cylinder(22, r=1.3, $fn=25);
+			translate([8,4,12]) rotate([0,-90,0]) cylinder(22, r=2.1, $fn=25);
 			translate([-2.9,4,12]) rotate([0,-90,0]) cylinder(12, r=2.15, $fn=60);
-			translate([0,4,12]) rotate([0,-90,0]) cylinder(3, r1=1.3, r2=2.15, $fn=60);
+			translate([0,4,12]) rotate([0,-90,0]) cylinder(3, r1=2.1, r2=2.15, $fn=60);
 		}
 	}
 
