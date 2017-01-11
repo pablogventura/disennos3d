@@ -233,8 +233,8 @@ module extruder_block() {
 		union() {
 			// Tube and filament holes
 			//#translate([4.8,36,15]) rotate([90,0,0]) cylinder(16, r=2.25, $fn=25);	// 3b
-			translate([4.8,24,15]) rotate([90,0,0]) cylinder(20, r=1.15, $fn=25);	// rev. 2, 3
-			translate([5.3,16,15]) rotate([90,0,5]) cylinder(10, r1=0.4, r2=3, $fn=25);	// rev. 3
+			translate([4.8,24,15]) rotate([90,0,0]) cylinder(20, r=2.1, $fn=25);	// rev. 2, 3
+			//translate([5.3,16,15]) rotate([90,0,5]) cylinder(10, r1=0.4, r2=3, $fn=25);	// rev. 3
 
 			// Insert and idler clearance
 			translate([0,0,9.9]) cylinder(20,r1=13, r2=5, $fn=50, center = true);	// rev. 3
@@ -286,7 +286,7 @@ module bsp_push_fit() {
 			}
 		}
 		translate([8+x_nuj,7,15]) rotate([0,90,0]) cylinder(8, r=(bsp/2), $fn=100);
-		translate([-1,7,15]) rotate([0,90,0]) cylinder(19, r=1.15, $fn=30);
+		translate([-1,7,15]) rotate([0,90,0]) cylinder(19, r=2.15, $fn=30);
 		translate([11.2+x_nuj,7,-1]) rotate([0,0,0]) cylinder(15, r=1.75, $fn=50);	// M3 Screw hole
 		translate([11.2+x_nuj,7,7]) rotate([0,0,30]) cylinder(5, r=3.5, $fn=6);	// M3 Screw hex nut hole
 		translate([11.2+x_nuj,5.3,-1]) cube([6,3.4,15]);
