@@ -255,7 +255,7 @@ module extruder_block() {
 			translate([-3.5,15.5,20.5]) rotate([90,0,0]) cylinder(6, r=3.5, $fn=25);	// rev. 3
 
 			// Bowden filament guide in-feed Cut off
-			translate([11,7.5,14]) rotate([0,0,35]) cube([8,4,28], center = true);	// rev. 3
+			translate([8,0,14]) rotate([0,0,70]) cube([35,10,28], center = true);	// rev. 3
 			translate([4.5,8.5,25]) cube([10,4,10], center = true);	// rev. 3
 		}
 	}
