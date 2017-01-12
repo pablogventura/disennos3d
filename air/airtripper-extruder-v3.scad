@@ -144,6 +144,10 @@ module extruder_idler_608z() {
 // Revision 3b
 
 module extruder_block() {
+    //TODO capaz le hace falta pensar en como meter el cepillo
+
+    
+    
 	difference() {
 		union() {
 			// Extruder base
@@ -184,7 +188,15 @@ module extruder_block() {
 					translate([-23,-30.5,10]) rotate([0,90,0]) cylinder(6, r=3.5, $fn=25);
 				}
 			} // End of fixing plate
+            // Brush mount
+            translate([-11.9,0,14.5])translate([0,0,-12])cylinder(r=5/2,h=11.5,$fn=24);
 		}
+        //Brush holes
+        translate([-11.9,0,14.5-3]){
+            translate([2,0,0])cylinder(r=20/2,h=4,$fn=32);
+            cylinder(r=10/2,h=20,$fn=32);
+            translate([0,0,-12])cylinder(r=3.1/2,h=40,$fn=24);
+        }
 		union() {
 			// Stepper shaft, gear insert and bearing cut-out
 			translate([0,0,9.8]) cylinder(20,r1=13, r2=5, $fn=50, center = true);	// rev. 3
