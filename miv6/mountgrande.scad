@@ -1,6 +1,6 @@
 use <e3d.scad>;
 
-//color("red",0.5)translate([18.5,-15,63.5])mirror([0,0,1])e3d();
+color("red",0.5)translate([18.5,-15,63.5])mirror([0,0,1])e3d();
 translate([8,-5,43])cube([5,2,5]);
 translate([8-6,-5-10-3,43+5])cube([5,2,5+5]);
 translate([8-4.5,-5-20,43])cube([5,2,5]);
@@ -94,3 +94,5 @@ rotate([0,-90,0])
 module hueco(){
 	translate([0,0,-5])cylinder(r=1,h=30,$fn=16);
 }
+
+translate([2,0,0])cube([31,10,10],center=true);

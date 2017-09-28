@@ -289,7 +289,6 @@ module bsp_push_fit() {
 			//translate([0,3,0]) cube([3,11,26]);
 			difference() {
 				translate([3+x_nuj,7,15]) rotate([0,90,0]) cylinder(12, r=(bsp/2)+5, $fn=100);
-				translate([11+x_nuj-3,7,19.5]) rotate([0,90,0]) cylinder(15+3, r=1.5, $fn=50);
 				translate([-5+x_nuj,20,3]) rotate([0,0,-45]) cube([10,10,26]);
 			}
 			difference() {
@@ -297,11 +296,11 @@ module bsp_push_fit() {
 				translate([2+x_nuj,-1,-7]) rotate([0,50,0]) cube([10,16,26]);
 			}
 		}
-		translate([8+x_nuj,7,15]) rotate([0,90,0]) cylinder(8, r=(bsp/2), $fn=100);
+		translate([8+x_nuj,7,15]) rotate([0,90,0]) cylinder(8, r=(9.5/2), $fn=100);
 		translate([-1,7,15]) rotate([0,90,0]) cylinder(19, r=2.15, $fn=30);
 		translate([11.2+x_nuj,7,-1]) rotate([0,0,0]) cylinder(15, r=1.75, $fn=50);	// M3 Screw hole
 		translate([11.2+x_nuj,7,7]) rotate([0,0,30]) cylinder(5, r=3.5, $fn=6);	// M3 Screw hex nut hole
-		translate([11.2+x_nuj,5.3,-1]) cube([6,3.4,15]);
+		//translate([11.2+x_nuj,5.3,-1]) cube([6,3.4,15]);
 		translate([11.2+x_nuj,7,-1]) rotate([0,0,0]) cylinder(2, r=3.5, $fn=50);
 		translate([11.2+x_nuj,7,0.99]) rotate([0,0,0]) cylinder(3, r1=3.5, r2=1.75, $fn=50);
 		translate([-2+x_nuj,-9,3]) rotate([0,0,20]) cube([10,10,26]);
