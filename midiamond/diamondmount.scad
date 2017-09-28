@@ -1,0 +1,14 @@
+difference(){
+union(){
+    difference(){
+        import("diamond_cooler_shield_blower_fixed_05.stl");
+        translate([-50,1,-50])cube([100,50,100]);
+    }
+    mirror([0,1,0])
+    difference(){
+        import("diamond_cooler_shield_blower_fixed_05.stl");
+        translate([-50,1,-50])cube([100,50,100]);
+    }
+}
+translate([-30,0,-18])rotate([0,30,0])scale([2,1,1])cylinder(r=4,h=20,$fn=32);
+}

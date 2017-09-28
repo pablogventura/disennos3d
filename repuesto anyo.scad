@@ -1,0 +1,14 @@
+$fn=32;
+distancia=19;
+difference(){
+hull(){
+cylinder(r=8/2,17);
+translate([distancia,0,0])cylinder(r=8/2,17);
+}
+translate([0,0,-2])
+hull(){
+cylinder(r=3.5/2,20);
+translate([distancia,0,0])cylinder(r=3.5/2,20);
+translate([distancia/2,10,0])cylinder(r=3.5/2,20);
+}
+}
