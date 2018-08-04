@@ -1,17 +1,12 @@
-/* [Teeths] */
-t1=7.3;
-t2=6.3;
-t3=8.5;
-t4=8.7;
-t5=5.3;
-t6=7.6;
-/* [Additional] */
-center=10;
-
-llave(t1,t2,t3,t4,t5,t6,center);
+p2=7+2;
+p1=5+2;
+p3=6+2;
+p4=5+2;
+p6=6+2;
+p5=7+2;
+centro=10;
 
 
-module llave(p1,p2,p3,p4,p5,p6,centro){
 rotate([0,5,0])translate([0,0,-1])paletas(p1,p2,p3,p4,p5,p6,centro);
 
 
@@ -28,13 +23,13 @@ translate([0,15,0])sphere(r=6/2,$fn=24);
 
 
 
-translate([0,18-3,0])rotate([90,0,0])cylinder(r=6/2,h=21,$fn=24);
+translate([0,18-3,0])rotate([90,0,0])cylinder(r=6/2,h=20-3+5,$fn=24);
 translate([0,15,0])sphere(r=6/2,$fn=24);
 
 //translate([0,-28,0])sphere(r=4.6/2,$fn=24);
 
 //toroide durante el bracito
-translate([0,-3,0])scale([1,0.66,1])rotate([90,0,0])rotate_extrude(convexity = 10, $fn = 24)
+#translate([0,-3,0])scale([1,0.66,1])rotate([90,0,0])rotate_extrude(convexity = 10, $fn = 24)
 translate([2, 0, 0])
 circle(r = 3.6/2, $fn = 24);
 
@@ -64,7 +59,7 @@ difference(){
 }
 translate([0,-68+4,-10])cylinder(r=3.8/2,h=20,$fn=16);
 }
-}
+
 module paletas(p1,p2,p3,p4,p5,p6,centro){
     placas=1.7;
     espacio=4;
