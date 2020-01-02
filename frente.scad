@@ -1,0 +1,41 @@
+difference(){
+union(){
+cube([90,2,200]);
+translate([0,0,2])
+rotate([-90,0,-90])
+cube([50,2,90]);
+translate([0,0,200])
+rotate([-90,0,-90])
+cube([50,2,90]);
+rotate([0,0,-90])
+cube([50,2,200]);
+translate([90-2,0,0])
+rotate([0,0,-90])
+cube([50,2,200]);
+}
+translate([10,-5,160])cube([13.5,10,29.7]);
+translate([50,-5,185])cube([8,10,4.5]);
+translate([35,-5,110])cube([45,10,26.5]);
+translate([35,-5,50])cube([45,10,26.5]);
+translate([60,-5,20])
+union(){
+  translate([0,0,0])cube([15,10,7.5]);
+  translate([-15-31,0,0])cube([15,10,7.5]);
+}
+translate([12,0,60-3+30+25])
+rotate([0,90,0])
+union(){
+  translate([0,0,10])
+  rotate([90,0,0])cylinder(d=3,h=10,center=true);
+  rotate([90,0,0])cylinder(d=3,h=10,center=true);
+}
+translate([12,0,60-3])
+rotate([0,90,0])
+union(){
+  translate([0,0,10])
+  rotate([90,0,0])cylinder(d=3,h=10,center=true);
+  rotate([90,0,0])cylinder(d=3,h=10,center=true);
+}
+translate([17,0,60-3+65+10])
+  rotate([90,0,0])cylinder(d=7,h=10,center=true);
+}
