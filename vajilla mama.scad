@@ -1,0 +1,25 @@
+altura=70;
+ancho=90-5;
+largo=80-5;
+grosor=1;
+difference(){
+hull(){
+  translate([5,5,0])cylinder(altura,r=5);
+  translate([ancho-10,0,0])
+  translate([5,5,0])cylinder(altura,r=5);
+  translate([ancho-10,largo-10,0])
+  translate([5,5,0])cylinder(altura,r=5);
+  translate([0,largo-10,0])
+  translate([5,5,0])cylinder(altura,r=5);
+}
+translate([0,0,-10])
+hull(){
+  translate([5+grosor,5+grosor,0])cylinder(altura+20,r=5);
+  translate([ancho-10-grosor,grosor,0])
+  translate([5,5,0])cylinder(altura+20,r=5);
+  translate([ancho-10-grosor,largo-10-grosor,0])
+  translate([5,5,0])cylinder(altura+20,r=5);
+  translate([grosor,largo-10-grosor,0])
+  translate([5,5,0])cylinder(altura+20,r=5);
+}
+}
