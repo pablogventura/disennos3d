@@ -1,0 +1,16 @@
+$fn=32;
+difference(){
+cube([20,10,8]);
+hull(){
+translate([10,11,3+2])
+rotate([90,0,0])
+cylinder(d=5,h=12);
+translate([10,11,3+2+5])
+rotate([90,0,0])
+cylinder(d=5,h=12);
+}
+translate([4,5,-2])
+cylinder(d=3.5,h=12);
+translate([4+12,5,-2])
+cylinder(d=3.5,h=12);
+}
