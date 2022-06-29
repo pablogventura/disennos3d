@@ -1,0 +1,14 @@
+$fn=512;
+difference(){
+union(){
+cylinder(r=135+2,h=20);
+translate([0,0,18.5])
+cylinder(r=135+2+5,h=1.5);
+}
+translate([0,0,-5])
+cylinder(r=135,h=30);
+translate([0,-190,-1])
+cube([200,200*2,50]);
+translate([-190,0,-1])
+cube([200*2,200,50]);
+}
