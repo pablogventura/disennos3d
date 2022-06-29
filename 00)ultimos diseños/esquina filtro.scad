@@ -1,0 +1,9 @@
+difference(){
+hull(){
+cube([20,1,1]);
+cube([1,20,1]);
+cube([1,1,20]);
+}
+translate([1,1,1])
+cube(20);
+}

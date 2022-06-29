@@ -1,0 +1,11 @@
+difference(){
+cube([100,160,1],center=true);
+translate([100/2-5,160/2-5,-20])
+cylinder(d=5,h=52);
+translate([100/2-5,-(160/2-5),-20])
+cylinder(d=5,h=52);
+translate([-(100/2-5),160/2-5,-20])
+cylinder(d=5,h=52);
+translate([-(100/2-5),-(160/2-5),-20])
+cylinder(d=5,h=52);
+}
