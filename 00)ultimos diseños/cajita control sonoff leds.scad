@@ -1,0 +1,51 @@
+$fn=64;
+difference(){
+translate([0,0,1])
+linear_extrude(24)
+difference(){
+    offset(1)
+    square([35.5,26],center=true);
+    square([35.5,26],center=true);
+}
+translate([-20,0,31.6])
+cube([5,11,9],center=true);
+hull(){
+translate([20,0,34.5])
+rotate([0,90,0])
+cylinder(d=3,h=10,center=true);
+translate([20,0,40.5])
+rotate([0,90,0])
+cylinder(d=3,h=10,center=true);
+}
+translate([0,0,24])
+rotate([0,90,0])
+cylinder(d=4,h=100,center=true);
+}
+translate([0,0,1])
+rotate([0,180,0])
+linear_extrude(1)
+difference(){
+offset(1)
+square([35.5,26],center=true);
+translate([0,13-7.5,0])
+circle(d=2);
+translate([17.5-17,13-15.5,0])
+circle(d=2);
+}
+/*
+//17.5
+translate([0,30,1])
+linear_extrude(1)
+difference(){
+square([35.5,26],center=true);
+    square([35.5,20],center=true);
+}
+
+translate([0,30,0])
+linear_extrude(1)
+difference(){
+offset(1)
+square([35.5,26],center=true);
+
+}
+*/

@@ -1,0 +1,32 @@
+$fn=128;
+
+intersection(){
+    difference(){
+        cylinder(d=33,h=17.75+2);
+        translate([0,0,-1])
+        cylinder(d=21.5*21.5/20.7,h=3);
+        translate([0,0,1.75])
+        cylinder(d=29,h=18-2);
+        translate([0,0,20])
+        cube([10,10,5],center=true);
+        translate([0,12,2])
+        cylinder(d=4,h=50);
+        translate([0,-12,2])
+        cylinder(d=4,h=50);
+        translate([10,0,2])
+        cylinder(d=2,h=50);
+        translate([-10,0,2])
+        cylinder(d=2,h=50);
+    }
+
+    union(){
+        translate([0,0,31])
+        sphere(d=40);
+        translate([0,0,19]){
+            scale([0.25,1,1])
+            sphere(d=40);
+            scale([1,0.25,1])
+            sphere(d=40);
+        }
+    }
+}
