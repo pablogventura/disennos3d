@@ -1,0 +1,11 @@
+//circle(d=50);
+difference(){
+linear_extrude(21+2){
+square([5.5+2,24]);
+translate([2.2,14.7+4,0])
+rotate([0,0,45])
+square([5.5+2,30]);
+}
+translate([1,-0.1,1])
+cube([5.5,23,21]);
+}
