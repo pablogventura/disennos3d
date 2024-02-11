@@ -1,0 +1,14 @@
+linear_extrude(10)
+difference(){
+hull(){
+circle(d=10);
+translate([20,-55,0])
+square([50,1],center=true);
+}
+offset(-2)
+hull(){
+circle(d=10);
+translate([20,-55,0])
+square([50,1],center=true);
+}
+}

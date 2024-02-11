@@ -1,0 +1,32 @@
+/*
+linear_extrude(30)
+difference(){
+    offset(2)
+    circle(d=68-2);
+    circle(d=68-2);
+}
+translate([0,0,30])
+difference(){
+cylinder(d1=70,d2=39, h=40);
+translate([0,0,-0.05])
+cylinder(d1=70-4,d2=39-4, h=40.1);
+}
+translate([0,0,70])
+linear_extrude(15)
+difference(){
+    offset(2)
+    circle(d=37-2);
+    circle(d=37-2);
+}
+*/
+difference(){
+translate([0,0,85]){
+    linear_extrude(2)
+    offset(2)
+    circle(d=37-2);
+    linear_extrude(4)
+    circle(d=37-2);
+}
+scale([0.5,1,1])
+cylinder(d=5,h=100);
+}

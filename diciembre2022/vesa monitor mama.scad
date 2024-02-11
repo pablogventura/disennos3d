@@ -1,0 +1,23 @@
+
+linear_extrude(4)
+difference(){
+    offset(10)
+    square([100,100],center=true);
+    circle(d=4);
+    translate([50,50,0])circle(d=4);
+    translate([50,-50,0])circle(d=4);
+    translate([-50,50,0])circle(d=4);
+    translate([-50,-50,0])circle(d=4);
+    translate([25,25,0])
+    offset(10)
+    square([50-10-20,50-10-20],center=true);
+    translate([25,-25,0])
+    offset(10)
+    square([50-10-20,50-10-20],center=true);
+    translate([-25,25,0])
+    offset(10)
+    square([50-10-20,50-10-20],center=true);
+    translate([-25,-25,0])
+    offset(10)
+    square([50-10-20,50-10-20],center=true);
+}
